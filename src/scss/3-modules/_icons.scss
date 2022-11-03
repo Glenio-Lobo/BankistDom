@@ -1,0 +1,46 @@
+@use '../1-base/variables' as var;
+
+.icon{
+    background-color: var.$color-primary-opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+
+    svg {
+        fill: var.$color-primary-darker;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+.operations__icon{
+    height: 7rem;
+    width: 7rem;
+
+    svg {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &--1{
+        background-color: var.$color-secondary-opacity;
+
+        svg{
+            fill: var.$color-secondary-darker;
+        }
+    }
+
+    // 2 caso já estilizado naturalmente pela class ICON
+    // &--2 {}
+
+    &--3{
+        background-color: var.$color-tertiary-opacity;
+
+        svg{
+            fill: var.$color-tertiary-darker;
+        }
+    }
+}

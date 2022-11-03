@@ -1,0 +1,50 @@
+@use '../1-base/variables' as var;
+
+
+.testimonials{
+    
+    &__card{
+        width: 65%;
+    }
+
+    &__title{
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+
+    &__description{
+        font-size: 1.8rem;
+        color: var.$text-color-4;
+        font-weight: 300;
+        line-height: 1.9;
+        margin: 2rem 0 4rem 0;
+    }
+
+    &__author{
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        margin-left: 4rem;
+        column-gap: 2rem;
+        font-size: 1.5rem;
+        font-style: normal;
+
+        // &__info{
+        //     display: flex;
+        // }
+
+        &__name{
+            font-weight: 600;
+            align-self: end;
+        }
+        
+        &__location{
+            color: var.$text-color-4;
+        }
+
+        img{
+            border-radius: 50%;
+            grid-row: 1 / 3;
+            height: 7rem;
+        }
+    }
+}

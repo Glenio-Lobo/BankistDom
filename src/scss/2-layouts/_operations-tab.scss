@@ -1,0 +1,17 @@
+@use '../1-base/variables' as var;
+
+.operations{
+    &__tab{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn{
+        margin: 0 1.5rem;
+        transform: translateY(-50%);
+
+        &--active{
+            transform: translateY(-55%);
+        }
+    }
+}

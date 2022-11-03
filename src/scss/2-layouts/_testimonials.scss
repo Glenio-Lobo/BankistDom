@@ -1,0 +1,85 @@
+@use '../1-base/variables' as var;
+
+
+.testimonials{
+
+    &__slider{
+        position: relative;
+        max-width: 100rem;
+        height: 45rem;
+        overflow: hidden;
+    }
+
+    &__card{
+        position: relative;
+    }
+
+    &__card::before{
+        content: '\201C';
+        color: var.$color-primary;
+        font-size: 18rem;
+        position: absolute;
+        top: -30%;
+        left: -10%;
+        z-index: -1;
+    }
+
+    &__slide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45rem;
+        position: absolute;
+        top: 0;
+        transition: transform 0.5s ease-in-out;
+        // transform: translateX(100%);
+
+        &--active{
+            transform: translateX(0%);
+        }
+    }
+
+    &__btn{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__btn--left{
+        left: 5%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__btn--right{
+        right: 5%;
+        transform: translate(50% ,-50%);
+    }
+
+    &__dots{
+        position: absolute;
+        display: flex;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__dot{
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background-color: var.$dot-bg-color;
+        margin-right: 1.5rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__dot--active{
+        background-color: var.$dot-active-bg-color;
+    }
+}

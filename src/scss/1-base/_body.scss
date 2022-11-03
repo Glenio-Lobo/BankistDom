@@ -1,0 +1,9 @@
+@use 'variables' as var;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var.$f3-bg-color;
+    color: var.$text-color-1;
+    font-weight: 400;
+    position: relative;
+}

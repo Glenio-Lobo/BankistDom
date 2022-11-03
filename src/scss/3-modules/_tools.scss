@@ -1,0 +1,39 @@
+@use '../1-base/variables' as var;
+
+.destaque{
+    position: relative;
+}
+
+.destaque::after{
+    position: absolute;
+    content: '';        
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: var.$gradient-primary;
+    opacity: 0.6;
+    z-index: -1;
+    transform: scale(1.07, 1.05) skewX(-15deg);
+}
+
+.overlay{
+    position: absolute;
+    z-index: 200;
+    background-color: var.$overlay-bg-color;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(6px);
+    transition: 0.5s;
+}
+
+.img-blur{
+    filter: blur(20px);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}

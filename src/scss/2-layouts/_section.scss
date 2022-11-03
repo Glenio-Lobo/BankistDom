@@ -1,0 +1,35 @@
+@use '../1-base/variables' as var;
+
+
+.section{
+    border-top: 2px solid var.$section-border-color;
+    padding: 13rem 4rem;
+    transition: all 0.5s;
+    
+    &__title, &__description{
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+
+    &__title{
+        color: var.$color-primary;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 1.5rem;
+    }
+
+    &__description{
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    &__content{
+        margin: 10rem auto 0 auto;
+    }
+
+    &--hidden{
+        opacity: 0;
+        transform: translateY(8rem);
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bankist-dom",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html src/img/** --dist-dir ./dist",
+    "sass": "sass --watch src/scss/bankist-dom.scss:src/css/bankist-dom.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "globo",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "core-js": "^3.26.0",
+    "regenerator-runtime": "^0.13.10"
+  }
+}

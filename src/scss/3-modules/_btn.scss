@@ -1,0 +1,76 @@
+@use '../1-base/variables' as var;
+
+
+.btn{
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 300;
+    border: none;
+    background-color: var.$color-primary;
+    border-radius: 5rem;
+    padding: 1rem 2.5rem;
+    transition: all 0.3s;
+
+    &:hover{
+        background-color: var.$color-primary-darker;
+        cursor: pointer;
+    }
+}
+
+.navbar__btn{
+    transition: 0.5s ease-out;
+}
+
+.operations__btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.3rem 4rem;
+
+    &__number{
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    &--1{
+        background-color: var.$color-secondary;
+
+        &:hover{
+            background-color: var.$color-secondary-darker;
+        }
+    }
+
+    &--2{
+        background-color: var.$color-primary;
+
+        &:hover{
+            background-color: var.$color-primary-darker;
+        }
+    }
+
+    &--3{
+        background-color: var.$color-tertiary;
+
+        &:hover{
+            background-color: var.$color-tertiary-darker;
+        }
+    }
+}
+
+.account__btn{
+    font-size: 1.8rem;
+    padding: 2rem 5rem;
+    font-weight: 400;
+}
+
+.slider__btn{
+    font-family: inherit;
+    font-size: 3.3rem;
+    border-radius: 50%;
+    text-align: center;
+    height: 6rem;
+    width: 6rem;
+    background-color: #FFFFFF70;
+    border: none;
+    cursor: pointer;
+}
+

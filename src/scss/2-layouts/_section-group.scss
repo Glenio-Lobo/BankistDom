@@ -1,0 +1,15 @@
+@use '../1-base/variables' as var;
+
+/*
+ * Grupos de conteúdo de cada section da main.
+*/
+
+.operations__group{
+    background-color: white;
+    border-radius: 10px;
+    max-width: 95rem;
+}
+
+.features__group{
+    max-width: 105rem;
+}

@@ -1,0 +1,31 @@
+@use '../1-base/variables' as var;
+
+.footer{
+    border-top: 2px solid var.$text-color-5;
+    background-color: var.$bg-color-footer;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    padding: 10rem;
+
+    &__list{
+        display: flex;
+        font-size: 1.7rem;
+        justify-content: space-evenly;
+        width: 70%;
+        margin-bottom: 4rem;
+    }
+
+    &__logo{
+        height: 5rem;
+    }
+
+    &__copyright{
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        color: var.$text-color-5;
+    }
+}
